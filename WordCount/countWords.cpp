@@ -4,15 +4,25 @@
 #include <fstream>
 #include <vector>
 #include <ctime>
+#include <future>
+
 
 using namespace std;
 
-#define STANDAR_SIZE 200 //En MB
+#define STANDAR_SIZE 50 //En MB
 #define MB_TO_B 1000000
 
 typedef long StoreType;
 
 const string outFile = "CountOutFile";
+
+
+bool isReady(thread & foo){
+	auto f = async(foo);
+	auto status = f.wait_for(std::chrono::seconds(0));
+	return status == std::future_status::timeout
+    
+}
 
 void splitFile(string fileName, int splits){
 	string command = "split -l$((`wc -l < "+  fileName +" `/" + to_string(splits) +")) "+ fileName  + " " + fileName + " -da 4";
@@ -122,6 +132,7 @@ void manager(string fileName, map<string, long> * res, int numThreads){
 			}
 		}
 	}
+	/*
 	threads[actualThread].join();
 	threadWords[actualThread]->clear();
 	threadWords[actualThread]->shrink_to_fit();
@@ -133,6 +144,16 @@ void manager(string fileName, map<string, long> * res, int numThreads){
 	addCounts(res, newMap);
 	newMap->clear();
 	delete newMap;
+	*/
+	newMap = new map<string, long>();
+	count(newWords, newMap);
+	addCounts(res, newMap);
+	newMap->clear();
+	delete newMap;
+	newWords->clear();
+	newWords->shrink_to_fit();
+	delete newWords;
+
 	for(int i = 0; i < numThreads; i++){
 		threads[i].join();
 		threadWords[i]->clear();
