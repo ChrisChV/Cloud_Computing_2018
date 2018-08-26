@@ -1,0 +1,2 @@
+split -l$((`wc -l < words.txt`/2)) words.txt words.txt -da 4
+ls -l OutFile | awk '{print $5}'

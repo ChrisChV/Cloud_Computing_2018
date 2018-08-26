@@ -9,20 +9,13 @@
 
 using namespace std;
 
-#define STANDAR_SIZE 50 //En MB
+#define STANDAR_SIZE 1 //En MB
 #define MB_TO_B 1000000
 
 typedef long StoreType;
 
 const string outFile = "CountOutFile";
 
-
-bool isReady(thread & foo){
-	auto f = async(foo);
-	auto status = f.wait_for(std::chrono::seconds(0));
-	return status == std::future_status::timeout
-    
-}
 
 void splitFile(string fileName, int splits){
 	string command = "split -l$((`wc -l < "+  fileName +" `/" + to_string(splits) +")) "+ fileName  + " " + fileName + " -da 4";
@@ -55,7 +48,7 @@ void splitFilesIntoStandarSize(string fileName){
 }
 
 void count(vector<string> * words, map<string, long> * res){
-	cout<<"Start count "<<words->size()<<endl;
+	//cout<<"Start count "<<words->size()<<endl;
 	map<string,long>::iterator actualFind;
 	for(auto iter = words->begin(); iter != words->end(); ++iter){
 		actualFind = res->find(*iter);
@@ -66,7 +59,7 @@ void count(vector<string> * words, map<string, long> * res){
 			actualFind->second += 1;
 		}
 	}
-	cout<<"Finish "<<res->size()<<endl;
+	//cout<<"Finish "<<res->size()<<endl;
 }
 
 void addCounts(map<string, long> * res, map<string, long> * add){
