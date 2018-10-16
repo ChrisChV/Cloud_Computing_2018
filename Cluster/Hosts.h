@@ -53,17 +53,30 @@ class Hosts{
         Hosts(){}
         Hosts(string fileName);
         void open(string fileName);
+        void setMaster(string fileName);
         void print();
         bool findByName(string name, HostThings & res);
         bool findByIp(string ip, HostThings & res);
-        
+        map<string, HostThings>::iterator begin(){return hostMap.begin();}
+        map<string, HostThings>::iterator end(){return hostMap.end();}
+
     private:
         map<string, HostThings> hostMap;
+        HostThings master;
         HostThings getLine(ifstream & file);
 };
 
 Hosts::Hosts(string fileName){
     open(fileName);
+}
+
+void Hosts::setMaster(string fileName){
+    ifstream file(fileName);
+    string name = "";
+    file >> name;
+    master = getLine(file);
+    master.name = name;
+    file.close();
 }
 
 void Hosts::open(string fileName){

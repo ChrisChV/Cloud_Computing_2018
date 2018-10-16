@@ -16,9 +16,14 @@ typedef int Status;
 const Command OS_SSHPASS = "sshpass -p "; //Con password
 const Command OS_SSH = "ssh ";
 const Command OS_SCP = "scp ";
+const Command OS_RM = "rm -f ";
 const Command OS_AT = "@";
 const Command OS_DIR_SLASH = "/";
 const Command OS_HOME_DIR = "/home/";
+const Command OS_HADOOP_USER = "hadoop/";
+const Command OS_HADOOP_DIR = "hadoop/";
+const Command OS_HADOOP_SBIN_DIR = "sbin/";
+const Command OS_HADOOP_START_ALL_SCRIPT = "start-all.sh";
 
 
 

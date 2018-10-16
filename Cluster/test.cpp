@@ -1,9 +1,9 @@
 #include <iostream>
-#include "Hosts.h"
+#include "ClusterManager.h"
 
 using namespace std;
 
 int main(){
-    Hosts h("hosts");
-    h.print();
+    ClusterManager cManager("hosts");
+    cManager.startHadoopCluster();
 }
