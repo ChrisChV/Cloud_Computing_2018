@@ -1,0 +1,60 @@
+Hora de inicio: Mon Aug 27 16:02:07 2018
+Init: Mon Aug 27 16:02:07 2018
+Dividiendo archivo OutFile50G en 11 partes...
+Iniciando conteo en nodo cs-unsa11@172.16.1.11
+Iniciando conteo en nodo cs-unsa07@172.16.1.7
+Iniciando conteo en nodo Iniciando conteo en nodo cs-unsa14@172.16.1.14
+cs-unsa12@172.16.1.12
+Iniciando conteo en nodo cs-unsa15@172.16.1.15
+Iniciando conteo en nodo Iniciando conteo en nodo masterIniciando conteo en nodo 
+Iniciando conteo en nodo cs-unsa17@172.16.1.17cs-unsa22@172.16.1.22
+
+Iniciando conteo en nodo cs-unsa23@172.16.1.23
+Iniciando conteo en nodo cs-unsa24@172.16.1.24
+cs-unsa20@172.16.1.20
+466461
+Conteo terminado en nodo cs-unsa22@172.16.1.22
+Copiando archivo CountOutFile desde el nodo cs-unsa22@172.16.1.22
+Archivo recivido desde el nodo cs-unsa22@172.16.1.22
+466460
+Conteo terminado en nodo cs-unsa15@172.16.1.15
+Copiando archivo CountOutFile desde el nodo cs-unsa15@172.16.1.15
+Archivo recivido desde el nodo cs-unsa15@172.16.1.15
+466460
+Conteo terminado en nodo cs-unsa23@172.16.1.23
+Copiando archivo CountOutFile desde el nodo cs-unsa23@172.16.1.23
+Archivo recivido desde el nodo cs-unsa23@172.16.1.23
+466460
+Conteo terminado en nodo cs-unsa11@172.16.1.11
+Copiando archivo CountOutFile desde el nodo cs-unsa11@172.16.1.11
+466460
+Archivo recivido desde el nodo cs-unsa11@172.16.1.11
+Conteo terminado en nodo cs-unsa14@172.16.1.14
+Copiando archivo CountOutFile desde el nodo cs-unsa14@172.16.1.14
+466460
+Conteo terminado en nodo cs-unsa17@172.16.1.17
+Copiando archivo CountOutFile desde el nodo cs-unsa17@172.16.1.17
+Archivo recivido desde el nodo cs-unsa14@172.16.1.14
+466460
+466460
+Conteo terminado en nodo cs-unsa12@172.16.1.12
+Copiando archivo CountOutFile desde el nodo cs-unsa12@172.16.1.12
+Conteo terminado en nodo cs-unsa20@172.16.1.20
+Copiando archivo CountOutFile desde el nodo cs-unsa20@172.16.1.20
+466460
+Archivo recivido desde el nodo cs-unsa20@172.16.1.20
+Archivo recivido desde el nodo cs-unsa12@172.16.1.12
+Conteo terminado en nodo master
+Archivo recivido desde el nodo cs-unsa17@172.16.1.17
+466460
+Conteo terminado en nodo cs-unsa24@172.16.1.24
+Copiando archivo CountOutFile desde el nodo cs-unsa24@172.16.1.24
+Archivo recivido desde el nodo cs-unsa24@172.16.1.24
+466460
+Conteo terminado en nodo cs-unsa07@172.16.1.7
+Copiando archivo CountOutFile desde el nodo cs-unsa07@172.16.1.7
+Archivo recivido desde el nodo cs-unsa07@172.16.1.7
+Iniciando conteo general
+Hora de fin: Mon Aug 27 16:05:30 2018
+
+Contar 3 min 23 s

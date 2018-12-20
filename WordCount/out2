@@ -1,0 +1,103 @@
+Hora de inicio: Mon Aug 27 15:43:07 2018
+Init: Mon Aug 27 15:43:07 2018
+Dividiendo archivo OutFile50G en 11 partes...
+Enviando el archivo OutFile50G0001 a cs-unsa07@172.16.1.7...
+sshpass -p 'root07' scp ./OutFile50G0001 cs-unsa07@172.16.1.7:/home/cs-unsa07/
+Enviando el archivo OutFile50G0002 a cs-unsa11@172.16.1.11...
+sshpass -p 'root11' scp ./OutFile50G0002 cs-unsa11@172.16.1.11:/home/cs-unsa11/
+Enviando el archivo OutFile50G0003 a cs-unsa12@172.16.1.12...
+sshpass -p 'root12' scp ./OutFile50G0003 cs-unsa12@172.16.1.12:/home/cs-unsa12/
+Enviando el archivo OutFile50G0004 a cs-unsa14@172.16.1.14...
+sshpass -p 'root14' scp ./OutFile50G0004 cs-unsa14@172.16.1.14:/home/cs-unsa14/
+Enviando el archivo OutFile50G0005 a cs-unsa15@172.16.1.15...
+sshpass -p 'root15' scp ./OutFile50G0005 cs-unsa15@172.16.1.15:/home/cs-unsa15/
+scp: /home/cs-unsa15//OutFile50G0005: No space left on device
+Enviando el archivo OutFile50G0006 a cs-unsa17@172.16.1.17...
+sshpass -p 'root17' scp ./OutFile50G0006 cs-unsa17@172.16.1.17:/home/cs-unsa17/
+Enviando el archivo OutFile50G0007 a cs-unsa20@172.16.1.20...
+sshpass -p 'root20' scp ./OutFile50G0007 cs-unsa20@172.16.1.20:/home/cs-unsa20/
+Enviando el archivo OutFile50G0008 a cs-unsa22@172.16.1.22...
+sshpass -p 'root22' scp ./OutFile50G0008 cs-unsa22@172.16.1.22:/home/cs-unsa22/
+scp: /home/cs-unsa22//OutFile50G0008: No space left on device
+Enviando el archivo OutFile50G0009 a cs-unsa23@172.16.1.23...
+sshpass -p 'root23' scp ./OutFile50G0009 cs-unsa23@172.16.1.23:/home/cs-unsa23/
+Enviando el archivo OutFile50G0010 a cs-unsa24@172.16.1.24...
+sshpass -p 'root24' scp ./OutFile50G0010 cs-unsa24@172.16.1.24:/home/cs-unsa24/
+Enviando el archivo count a cs-unsa07@172.16.1.7...
+sshpass -p 'root07' scp ./count cs-unsa07@172.16.1.7:/home/cs-unsa07/
+Enviando el archivo count a cs-unsa11@172.16.1.11...
+sshpass -p 'root11' scp ./count cs-unsa11@172.16.1.11:/home/cs-unsa11/
+Enviando el archivo count a cs-unsa12@172.16.1.12...
+sshpass -p 'root12' scp ./count cs-unsa12@172.16.1.12:/home/cs-unsa12/
+Enviando el archivo count a cs-unsa14@172.16.1.14...
+sshpass -p 'root14' scp ./count cs-unsa14@172.16.1.14:/home/cs-unsa14/
+Enviando el archivo count a cs-unsa15@172.16.1.15...
+sshpass -p 'root15' scp ./count cs-unsa15@172.16.1.15:/home/cs-unsa15/
+Enviando el archivo count a cs-unsa17@172.16.1.17...
+sshpass -p 'root17' scp ./count cs-unsa17@172.16.1.17:/home/cs-unsa17/
+Enviando el archivo count a cs-unsa20@172.16.1.20...
+sshpass -p 'root20' scp ./count cs-unsa20@172.16.1.20:/home/cs-unsa20/
+Enviando el archivo count a cs-unsa22@172.16.1.22...
+sshpass -p 'root22' scp ./count cs-unsa22@172.16.1.22:/home/cs-unsa22/
+Enviando el archivo count a cs-unsa23@172.16.1.23...
+sshpass -p 'root23' scp ./count cs-unsa23@172.16.1.23:/home/cs-unsa23/
+Enviando el archivo count a cs-unsa24@172.16.1.24...
+sshpass -p 'root24' scp ./count cs-unsa24@172.16.1.24:/home/cs-unsa24/
+Iniciando conteo en nodo cs-unsa07@172.16.1.7
+Iniciando conteo en nodo Iniciando conteo en nodo cs-unsa11@172.16.1.11
+cs-unsa12@172.16.1.12
+Iniciando conteo en nodo Iniciando conteo en nodo cs-unsa14@cs-unsa15172.16.1.14@
+172.16.1.15
+Iniciando conteo en nodo Iniciando conteo en nodo cs-unsa17@172.16.1.17
+cs-unsa20@172.16.1.20
+Iniciando conteo en nodo cs-unsa22@172.16.1.22
+Iniciando conteo en nodo master
+Iniciando conteo en nodo cs-unsa24@172.16.1.24
+Iniciando conteo en nodo cs-unsa23@172.16.1.23
+466461
+Conteo terminado en nodo cs-unsa22@172.16.1.22
+Copiando archivo CountOutFile desde el nodo cs-unsa22@172.16.1.22
+Archivo recivido desde el nodo cs-unsa22@172.16.1.22
+466460
+Conteo terminado en nodo cs-unsa15@172.16.1.15
+Copiando archivo CountOutFile desde el nodo cs-unsa15@172.16.1.15
+Archivo recivido desde el nodo cs-unsa15@172.16.1.15
+466460
+Conteo terminado en nodo cs-unsa23@172.16.1.23
+Copiando archivo CountOutFile desde el nodo cs-unsa23@172.16.1.23
+Archivo recivido desde el nodo cs-unsa23@172.16.1.23
+466460
+Conteo terminado en nodo cs-unsa11@172.16.1.11
+Copiando archivo CountOutFile desde el nodo cs-unsa11@172.16.1.11
+Archivo recivido desde el nodo cs-unsa11@172.16.1.11
+466460
+466460
+Conteo terminado en nodo cs-unsa17@172.16.1.17
+Copiando archivo CountOutFile desde el nodo cs-unsa17@172.16.1.17
+Conteo terminado en nodo cs-unsa12@172.16.1.12
+Copiando archivo CountOutFile desde el nodo cs-unsa12@172.16.1.12
+466460
+Conteo terminado en nodo cs-unsa14@172.16.1.14
+Copiando archivo CountOutFile desde el nodo cs-unsa14@172.16.1.14
+Archivo recivido desde el nodo cs-unsa12@172.16.1.12
+Archivo recivido desde el nodo cs-unsa17@172.16.1.17
+466460
+Conteo terminado en nodo cs-unsa20@172.16.1.20
+Copiando archivo CountOutFile desde el nodo cs-unsa20@172.16.1.20
+Archivo recivido desde el nodo cs-unsa14@172.16.1.14
+Archivo recivido desde el nodo cs-unsa20@172.16.1.20
+466460
+Conteo terminado en nodo cs-unsa24@172.16.1.24
+Copiando archivo CountOutFile desde el nodo cs-unsa24@172.16.1.24
+Archivo recivido desde el nodo cs-unsa24@172.16.1.24
+466460
+Conteo terminado en nodo master
+466460
+Conteo terminado en nodo cs-unsa07@172.16.1.7
+Copiando archivo CountOutFile desde el nodo cs-unsa07@172.16.1.7
+Archivo recivido desde el nodo cs-unsa07@172.16.1.7
+Iniciando conteo general
+Hora de fin: Mon Aug 27 16:00:11 2018
+
+
+Copiar y contar 17 min

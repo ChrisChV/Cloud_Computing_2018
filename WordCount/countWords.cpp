@@ -9,7 +9,7 @@
 
 using namespace std;
 
-#define STANDAR_SIZE 1 //En MB
+#define STANDAR_SIZE 100 //En MB
 #define MB_TO_B 1000000
 
 typedef long StoreType;
@@ -138,6 +138,7 @@ void manager(string fileName, map<string, long> * res, int numThreads){
 	newMap->clear();
 	delete newMap;
 	*/
+
 	newMap = new map<string, long>();
 	count(newWords, newMap);
 	addCounts(res, newMap);
@@ -148,13 +149,15 @@ void manager(string fileName, map<string, long> * res, int numThreads){
 	delete newWords;
 
 	for(int i = 0; i < numThreads; i++){
-		threads[i].join();
-		threadWords[i]->clear();
-		threadWords[i]->shrink_to_fit();
-		delete threadWords[i];
-		addCounts(res, threadMaps[i]);
-		threadMaps[i]->clear();
-		delete threadMaps[i];
+		if(threads[i].joinable()){
+			threads[i].join();
+			threadWords[i]->clear();
+			threadWords[i]->shrink_to_fit();
+			delete threadWords[i];
+			addCounts(res, threadMaps[i]);
+			threadMaps[i]->clear();
+			delete threadMaps[i];
+		}
 	}
 	file.close();
 }

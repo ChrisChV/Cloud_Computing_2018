@@ -70,12 +70,16 @@ int main(int argc, char ** argv){
 	int numOfThreads = stoi(s_numOfThreads);
 	int numOfNodes = getNumOfNodes(fileOfHosts) + 1;
 	thread countNodesThreads[numOfNodes - 1];
+	cout<<"Init: "<<getNowTime()<<endl;
+	cout<<"Dividiendo archivo "<<fileForCount<<" en "<<numOfNodes<<" partes..."<<endl;
 
-	cout<<"Dividiendo archivo "<<fileForCount<<" en "<<numOfNodes<<" partes...";
-	mytime.init();
-	splitFile(fileForCount, numOfNodes);
-	mytime.end();
-	mytime.print();
+	
+//	mytime.init();
+
+//	splitFile(fileForCount, numOfNodes);
+//	mytime.end();
+//	mytime.print();
+//	cout<<"End: "<<getNowTime()<<endl;
 
 	string partOfFile = "";
 	string host = "";
@@ -93,10 +97,10 @@ int main(int argc, char ** argv){
 		fileHosts>>host;
 		fileHosts>>user;
 		fileHosts>>pass;
-		sendFile(partOfFile, host, user, pass);
+		//sendFile(partOfFile, host, user, pass);
 	}
 	fileHosts.close();
-	sendToAll(fileOfHosts, countFileName);
+	//sendToAll(fileOfHosts, countFileName);
 
 	fileHosts.open(fileOfHosts);
 
